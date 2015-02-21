@@ -11,4 +11,5 @@
 	<string name="destino_obligatorio">El campo destino es obligatorio</string>
 	<string name="info_no_disponible">Información no disponible</string>
 	<string name="contactar">Contactar</string>
+	<string name="filtrar">Filtar por</string>
 </resources>
