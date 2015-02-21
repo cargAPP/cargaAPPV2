@@ -9,6 +9,8 @@ public class Vehiculo implements Serializable{
 	private String tipoVehiculo;
 	private String capacidad;
 	private String modelo;
+	private String capacidadVolumen;
+	private String ubicacion;
 	
 	public String getTipoVehiculo() {
 		return tipoVehiculo;
@@ -28,7 +30,17 @@ public class Vehiculo implements Serializable{
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	
-	
+	public String getCapacidadVolumen() {
+		return capacidadVolumen;
+	}
+	public void setCapacidadVolumen(String capacidadVolumen) {
+		this.capacidadVolumen = capacidadVolumen;
+	}
+	public String getUbicacion() {
+		return ubicacion;
+	}
+	public void setUbicacion(String ubicacion) {
+		this.ubicacion = ubicacion;
+	}
 
 }

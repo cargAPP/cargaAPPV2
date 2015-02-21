@@ -33,7 +33,7 @@ public class ListarServiciosAdapter extends ArrayAdapter<Servicio>{
 			vistaitem.vehiculoTextView = (TextView) item.findViewById(R.id.vehiculoTextView);
 			vistaitem.capacidadTextView = (TextView) item.findViewById(R.id.capacidadTextView);
 			vistaitem.nombreTextView = (TextView) item.findViewById(R.id.nombreTextView);
-//			vistaitem.conductorRatingBar = (RatingBar) item.findViewById(R.id.conductorRatingBar);
+			vistaitem.conductorRatingBar = (RatingBar) item.findViewById(R.id.conductorRatingBar);
 			item.setTag(vistaitem);
 		} else {
 			vistaitem = (VistaItem) item.getTag();
