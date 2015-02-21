@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">CargaAPP</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="donde_estoy">Donde estoy</string>
+    <string name="para_donde_voy">Para donde voy</string>
+    <string name="action_websearch">Web search</string>
+    <string name="solicitar">Solicitar</string>
+	<string name="ubicacion_obligatorio">El campo ubicación es obligatorio</string>
+	<string name="destino_obligatorio">El campo destino es obligatorio</string>
+	<string name="info_no_disponible">Información no disponible</string>
+	<string name="contactar">Contactar</string>
 </resources>
