@@ -32,6 +32,12 @@
         <activity android:name=".DetalleServicioActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity android:name=".UbicacionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".InforCompletaActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

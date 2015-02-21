@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-
+import com.cappacitate.cargaapp.utility.Utility;
 import com.cappacitate.cargaapp.bussiness.Servicio;
 
 public class DetalleServicioActivity extends Activity{
@@ -55,26 +55,21 @@ public class DetalleServicioActivity extends Activity{
 
 	private void pintarPantalla() {
 		
-		vehiculoTextView.setText(pintarInfo(servicioDetalle.getVehiculo().getTipoVehiculo()));
-		pesoTextView.setText(pintarInfo(servicioDetalle.getVehiculo().getCapacidad()));
-		volumenTextView.setText(pintarInfo(servicioDetalle.getVehiculo().getCapacidadVolumen()));
-		modeloTextView.setText(pintarInfo(servicioDetalle.getVehiculo().getModelo()));
-		ubicacionTextView.setText(pintarInfo(servicioDetalle.getVehiculo().getUbicacion()));
-		conductorTextView.setText(pintarInfo(servicioDetalle.getNomreConductor()));
+		vehiculoTextView.setText(Utility.pintarInfo(servicioDetalle.getVehiculo().getTipoVehiculo(), this));
+		pesoTextView.setText(Utility.pintarInfo(servicioDetalle.getVehiculo().getCapacidad(), this));
+		volumenTextView.setText(Utility.pintarInfo(servicioDetalle.getVehiculo().getCapacidadVolumen(), this));
+		modeloTextView.setText(Utility.pintarInfo(servicioDetalle.getVehiculo().getModelo(), this));
+		ubicacionTextView.setText(Utility.pintarInfo(servicioDetalle.getVehiculo().getUbicacion(), this));
+		conductorTextView.setText(Utility.pintarInfo(servicioDetalle.getNomreConductor(), this));
 		
 	}
 
-	private String pintarInfo(String info) {
-		return (info == null || info.equals(""))? getString(R.string.info_no_disponible): info;
-	}
+	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
+
 		super.onActivityResult(requestCode, resultCode, data);
 		if(requestCode == 1 && resultCode == 3) {
-//			Intent returnIntent = new Intent();
-//			returnIntent.putExtra("result", "Completa");
-//			setResult(RESULT_OK, returnIntent);
 			finish();
 		}
 	}
